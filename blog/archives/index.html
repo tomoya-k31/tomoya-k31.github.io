@@ -9,11 +9,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>Blog Archive - Tomoya's Blog</title>
+  <meta name="author" content="Tomoya Kakuda">
 
   
-  <meta name="description" content=" Blog Archive Recent Posts ">
+  <meta name="description" content="Blog Archive Recent Posts GitHub Repos Status updating... @tomoya-k31 on GitHub $.domReady(function(){ if (!window.jXHR){ var jxhr = document. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -25,7 +25,7 @@
   <link rel="canonical" href="http://tomoya-k31.github.io/blog/archives">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Tomoya's Blog" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -65,6 +65,35 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/tomoya-k31">@tomoya-k31</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'tomoya-k31',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
 
 
 
@@ -83,7 +112,11 @@
 <div class="col-md-2">
   <div class="social-icon-list">
     
+    <a href="https://twitter.com/tomoya_k31"><img src="/images/glyphicons_social_31_twitter.png"/></a>
+    
 
+    
+    <a href="https://github.com/tomoya-k31"><img src="/images/glyphicons_social_21_github.png"/></a>
     
 
     <a href="mailto:"><img src="/images/glyphicons_social_39_e-mail.png"/></a>
